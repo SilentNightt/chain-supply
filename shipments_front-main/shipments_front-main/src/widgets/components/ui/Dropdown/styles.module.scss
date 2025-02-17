@@ -1,0 +1,40 @@
+.dropdown_item {
+  border-top: 2px solid #808080;
+  width: 100%;
+
+  .dropdown_btn {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .arrow {
+      font-size: 12px;
+      transition: transform 0.3s;
+    }
+  }
+
+  .dropdown_content {
+    display: none;
+    background: white;
+    padding: 10px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      padding: 5px 0;
+    }
+  }
+
+  &.active {
+    .dropdown_content {
+      display: block;
+    }
+  }
+}

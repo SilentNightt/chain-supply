@@ -1,0 +1,29 @@
+.button {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 6px;
+  border: 1px solid var(--dark);
+  cursor: pointer;
+  justify-content: center;
+}
+.button_default {
+  background: var(--dark);
+  color: var(--text-white);
+  font-weight: 700;
+}
+.button_outline {
+  background: var(--white);
+  color: var(--dark);
+  font-weight: 500;
+}
+.button:hover {
+  opacity: 80%;
+}

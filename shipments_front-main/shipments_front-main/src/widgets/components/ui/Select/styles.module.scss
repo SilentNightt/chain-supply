@@ -1,0 +1,29 @@
+.select_wrapper {
+  position: relative;
+  display: inline-block;
+  select {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: none;
+    appearance: none;
+    border: none;
+    font-weight: bold;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+}
+.select_wrapper::before {
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  width: 10px;
+  height: 5px;
+  background: url("/assets/select.png") no-repeat center;
+  background-size: contain;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

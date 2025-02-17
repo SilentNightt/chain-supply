@@ -1,0 +1,35 @@
+.table_block {
+  margin-top: 24px;
+  overflow-x: auto;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    th,
+    td {
+      border-radius: 6px;
+      border: 1px solid #ededed;
+      padding: 9px 16px 9px 16px;
+      text-align: left;
+      &:first-child {
+        text-align: center;
+      }
+    }
+    thead {
+      background-color: var(--background);
+    }
+
+    td {
+      padding: 15px 10px;
+      &:last-child {
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 1px;
+      }
+    }
+    tbody {
+      tr:nth-child(odd) {
+        background-color: var(--background-grey);
+      }
+    }
+  }
+}

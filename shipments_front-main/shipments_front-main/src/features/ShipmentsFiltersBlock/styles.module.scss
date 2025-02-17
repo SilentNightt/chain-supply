@@ -1,0 +1,102 @@
+.filters_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+    .search {
+      padding: 10px 18px 10px 18px;
+      background: var(--background-grey);
+      display: flex;
+      height: 48px;
+      border-radius: 6px;
+      align-items: center;
+      flex-direction: row;
+      gap: 4px;
+      input {
+        background: var(--background-grey);
+        width: 100%;
+        outline: 0;
+        border: 0;
+        ::placeholder {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+    .select {
+      display: flex;
+      gap: 8px;
+      @media (max-width: 1200px) {
+        display: none;
+      }
+      .select_item {
+        height: 48px;
+        padding: 10px 18px 10px 18px;
+        background: var(--background-grey);
+        display: flex;
+        gap: 10px;
+        border-radius: 6px;
+        align-items: center;
+        p {
+          font-size: 14px;
+        }
+      }
+      .select_date_item {
+        display: block;
+        gap: 40px;
+        position: relative;
+      }
+      &:last-child {
+        cursor: pointer;
+      }
+    }
+  }
+  .btn_block {
+    display: flex;
+
+    gap: 4px;
+    @media (min-width: 1440px) {
+      img {
+        display: none;
+      }
+    }
+  }
+  .select {
+    display: flex;
+    gap: 8px;
+    @media (min-width: 1200px) {
+      display: none;
+    }
+    .select_item {
+      height: 48px;
+      padding: 10px 18px 10px 18px;
+      background: var(--background-grey);
+      display: flex;
+      gap: 10px;
+      border-radius: 6px;
+      align-items: center;
+      p {
+        font-size: 14px;
+      }
+    }
+    .select_date_item {
+      display: block;
+      gap: 40px;
+      position: relative;
+    }
+    &:last-child {
+      cursor: pointer;
+    }
+  }
+}

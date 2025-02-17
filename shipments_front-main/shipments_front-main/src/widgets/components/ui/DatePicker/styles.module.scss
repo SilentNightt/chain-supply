@@ -1,0 +1,29 @@
+.date_picker {
+  position: absolute;
+  border-radius: 28px;
+  box-shadow: #000000;
+  background: var(--background);
+  min-width: 500px;
+  margin-top: 30px;
+  padding: 16px 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  .pickers_block {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+    .picker {
+      max-width: 174px;
+    }
+  }
+  .btns {
+    padding-top: 24px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 8px;
+  }
+  &.hidden {
+    display: none;
+  }
+}

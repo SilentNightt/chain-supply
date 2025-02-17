@@ -1,0 +1,12 @@
+.shipments__block {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 72px;
+  @media (max-width: 1200px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

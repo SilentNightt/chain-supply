@@ -1,0 +1,109 @@
+.faq {
+  padding-left: 40px;
+  margin-bottom: 17px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-bottom: 50px;
+
+  @media (max-width: 839px) {
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-direction: column-reverse;
+  }
+  .footer_line {
+    height: 3px;
+    background: #bfbfbf;
+  }
+  .footer_links {
+    display: flex;
+    margin-top: 50px;
+    gap: 120px;
+    .footer_links__block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--dark);
+      .block_title {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .block_item {
+        font-weight: 400;
+      }
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+    .footer_join_block {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      gap: 20px;
+      .images_block {
+        display: flex;
+        gap: 30px;
+
+        .dropdown_block {
+          display: none;
+          .end_line {
+            height: 2px;
+            background: #808080;
+          }
+          @media (max-width: 1200px) {
+            display: block;
+          }
+        }
+        .images {
+          display: flex;
+          gap: 16px;
+        }
+        @media (max-width: 1200px) {
+          flex-direction: column-reverse;
+        }
+      }
+      .numbers_block {
+        p {
+          margin-top: 4px;
+          font-size: 11px;
+        }
+      }
+      @media (max-width: 1200px) {
+        flex-direction: column-reverse;
+      }
+    }
+    @media (max-width: 1200px) {
+      h4 {
+        display: none;
+      }
+    }
+  }
+  .logo_block {
+    margin-top: 40px;
+    .logo_line {
+      margin-bottom: 30px;
+      background: #ededed;
+      height: 1px;
+      width: 100%;
+    }
+    .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .cards {
+        display: flex;
+        gap: 16px;
+        @media (max-width: 1200px) {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

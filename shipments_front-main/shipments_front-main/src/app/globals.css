@@ -1,0 +1,46 @@
+:root {
+  --background: #ffffff;
+  --background-grey: #f7f7f7;
+  --black: #0a0a0a;
+  --dark: #333333;
+  --text-dark: #292929;
+  --text-white: #ffffff;
+  --border-grey: #999999;
+  --foreground: #171717;
+}
+
+*:focus {
+  outline: none;
+}
+select {
+  border: none;
+  height: 100%;
+  padding: 0;
+}
+
+h html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100;
+  width: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--text-dark);
+  background: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
