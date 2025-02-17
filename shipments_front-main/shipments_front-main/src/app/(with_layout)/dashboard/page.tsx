@@ -12,10 +12,9 @@ export default function Page() {
   return (
     <>
       <div className={styles.bg__screen_block}>
-        <h1>Более 13 лет вместе</h1>
+        <h1>От немецкой идеи к производству в России</h1>
         <h4>
-          Более 13 лет помогаем поставщикам и оптовым покупателям находить друг
-          друга
+            Фабрике KENNER уже 15 лет
         </h4>
         <div className={styles.screen_block__btns}>
           <div className={styles.btn}>
